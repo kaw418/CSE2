@@ -25,6 +25,5 @@ public class Timer {
         int mins = (int) (timeDiff % 60);   //Gives the minutes difference w/ remainder op
         System.out.println("You have " + hours + " hours and " + mins + " minutes until dinner.");
             //Above prints out the time difference
-        
     }
 }
