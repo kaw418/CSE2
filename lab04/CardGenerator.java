@@ -5,7 +5,7 @@
 
 public class CardGenerator{
     public static void main(String[] args){
-        int digit = (int)(Math.random()*52)+2;
+        int digit = (int)(Math.random()*52)+1;
         String identity ="";    //declare identity
         String suit ="";        //declare suit
         //create if statements to distinguish suits (diamonds, clubs, hearts, spades)
