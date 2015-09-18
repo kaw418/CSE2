@@ -6,8 +6,9 @@
 public class CardGenerator{
     public static void main(String[] args){
         int digit = (int)(Math.random()*52)+2;
-        String identity ="";
-        String suit ="";
+        String identity ="";    //declare identity
+        String suit ="";        //declare suit
+        //create if statements to distinguish suits (diamonds, clubs, hearts, spades)
         if ( digit < 14 ){
             suit =  "Diamonds";
         }
@@ -20,7 +21,9 @@ public class CardGenerator{
         else if ( digit > 39 ){
             suit = "Spades";
         }
+        //divide by 13 and use remainder, prevents from having to write out 52 cases
         int number = (digit % 13);
+        //use switch statement to distinguish card identities
         switch (number){
             case 1:
                 identity = "Ace";
@@ -63,7 +66,7 @@ public class CardGenerator{
                 break;
             
         }
-        
+        //print out the result
         System.out.println("You picked the " + identity + " of " + suit);
         
     }
