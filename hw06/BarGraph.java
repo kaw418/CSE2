@@ -175,7 +175,7 @@ public class BarGraph{
         while(counter<207){     //the counter goes to 207 because there are 208 weeks in 4 years... and the sum of 4 years begins with this week we've already calculated
             random = (int)(Math.random()*41)-20;    //the random number can range from -20 to 20 (because the percent change is from -20% to 20%)
             percent = (random/100.00);              //this random number is converted to a percent and implicitly casted to a double
-            sum+= (percent * average) + average;    //the sum will continue to increase by the average multiplied by a random percent ftom -20 to 20
+            sum+= ((percent * (7 *average)) + (7* average));    //the sum will continue to increase by the average multiplied by a random percent ftom -20 to 20
             counter++;                              // 1 will continue to be added to the counter and the loop will stop once the counter = 207... it will loop 207 times
         }
         //prints a properly formated statement for the estimated expenditure... at lease 4 digits with 2 digits after the decimal place
